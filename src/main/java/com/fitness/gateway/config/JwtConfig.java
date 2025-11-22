@@ -37,7 +37,7 @@ public class JwtConfig {
                 .build();
 
         String jwkSetUri =
-                "https://13.201.82.148:8443/realms/fitness-oauth2/protocol/openid-connect/certs";
+                "https://13.205.8.126:8443/realms/fitness-oauth2/protocol/openid-connect/certs";
 
         return NimbusReactiveJwtDecoder.withJwkSetUri(jwkSetUri)
                 .webClient(webClient)
