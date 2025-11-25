@@ -3,7 +3,7 @@ spring:
     name: api-gateway
 
   config:
-    import: "optional:configserver:http://configserver-microservice.onrender.com"
+    import: "optional:configserver:https://configserver-microservice.onrender.com"
 
   cloud:
     config:
