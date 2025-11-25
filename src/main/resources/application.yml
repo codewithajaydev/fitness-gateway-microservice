@@ -1,17 +1,21 @@
 spring:
   application:
     name: api-gateway
-  config:
-    import: "optional:configserver:https://configserver-microservice.onrender.com"
 
-   cloud:
+  config:
+    import: "optional:configserver:http://configserver-microservice.onrender.com"
+
+  cloud:
     config:
       enabled: true
       fail-fast: true
+
       request-read-timeout: 20000
       request-connect-timeout: 20000
+
       retry:
         max-attempts: 25
         initial-interval: 3000
         multiplier: 1.5
         max-interval: 20000
+
