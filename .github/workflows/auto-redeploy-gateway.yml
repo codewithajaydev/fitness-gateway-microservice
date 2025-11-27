@@ -2,7 +2,7 @@ name: Auto Redeploy gateway Service
 
 on:
   schedule:
-    - cron: "0 * * * *"   # runs every hour (UTC)
+    - cron: "2 * * * *"   # runs every hour (UTC)
 
 jobs:
   redeploy:
